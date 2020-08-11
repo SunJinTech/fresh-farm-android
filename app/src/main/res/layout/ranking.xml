@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ranking_page_height"
+    tools:context=".RankingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        style="@style/plain_text_md"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="랭킹"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_grey_bolder"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:id="@+id/content1"
+            style="@style/plain_text_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="1. 가금티푸스"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sub1"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="(13회 확진)"
+            app:layout_constraintBottom_toBottomOf="@+id/content1"
+            app:layout_constraintStart_toEndOf="@+id/content1" />
+
+        <TextView
+            android:id="@+id/content2"
+            style="@style/plain_text_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="2. 반갑습니다아아ㅏ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content1" />
+
+        <TextView
+            android:id="@+id/sub2"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="(13회 확진)"
+            app:layout_constraintBottom_toBottomOf="@+id/content2"
+            app:layout_constraintStart_toEndOf="@+id/content2" />
+
+        <TextView
+            android:id="@+id/content3"
+            style="@style/plain_text_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="3. 행복하세요오오오"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content2" />
+
+        <TextView
+            android:id="@+id/sub3"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="(13회 확진)"
+            app:layout_constraintBottom_toBottomOf="@+id/content3"
+            app:layout_constraintStart_toEndOf="@+id/content3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// firebase sdk
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.sun.freshfarm"
+        minSdkVersion 28
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+//    retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+//    naver map
+    implementation 'com.naver.maps:map-sdk:3.8.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+//    recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+//    anko
+    implementation "org.jetbrains.anko:anko:$anko_version"
+
+//    for firebase sdk
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    implementation 'com.google.firebase:firebase-auth-ktx:19.3.2'
+
+//    for firebase auth
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+
+//    for firebase auth ui
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+//    for firebase database
+    implementation 'com.google.firebase:firebase-database-ktx:19.3.1'
+
+    //    for firebase firestore
+    implementation 'com.google.firebase:firebase-firestore-ktx:21.5.0'
+
+//    for firebase functions
+    implementation 'com.google.firebase:firebase-functions-ktx:19.0.2'
+
+//for navigation view
+    implementation 'com.google.android.material:material:1.1.0'
+
+//    Google Play Services Locacom.google.android.gms : play - services - location : 17.0.0tion
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    // Add the SDK for Firebase Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging:20.2.3'
+}

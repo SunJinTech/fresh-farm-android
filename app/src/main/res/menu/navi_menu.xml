@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <!--<item android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="홈"
+            />
+        <item android:id="@+id/menu_report"
+            android:icon="@drawable/ic_report_black_24dp"
+            android:title="나의 신고 목록"
+            />-->
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="내 정보"
+            />
+
+        <item android:id="@+id/menu_search_confirm_disease"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="확진목록 보기"
+            />
+
+        <item android:id="@+id/menu_search_report_submit_anther"
+            android:icon="@drawable/ic_report_black_24dp"
+            android:title="다른 농장 신고"
+            />
+
+        <item android:id="@+id/menu_search_report_disease"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="신고목록 보기"
+            />
+       <!-- <item android:id="@+id/menu_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="설정"
+            />-->
+
+    </group>
+</menu>

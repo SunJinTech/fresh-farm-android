@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmcase.CaseDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확진정보"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/kindIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cow_white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/diseaseForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar">
+
+        <TextView
+            android:id="@+id/diseaseFormTitle"
+            style="@style/title_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="질병 정보"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/diseaseNameSubtitle"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="질병 이름"
+            app:layout_constraintStart_toStartOf="@+id/diseaseName"
+            app:layout_constraintTop_toBottomOf="@+id/diseaseFormTitle" />
+
+        <TextView
+            android:id="@+id/diseaseName"
+            style="@style/plain_text_lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diseaseNameSubtitle"
+            tools:text=" " />
+
+        <TextView
+            android:id="@+id/diseaseNameSub"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/diseaseName"
+            app:layout_constraintStart_toEndOf="@+id/diseaseName"
+            tools:text=" " />
+
+        <TextView
+            android:id="@+id/diseaseCountSubtitle"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="발병 횟수"
+            app:layout_constraintStart_toStartOf="@+id/diseaseName"
+            app:layout_constraintTop_toBottomOf="@+id/diseaseName" />
+
+        <TextView
+            android:id="@+id/diseaseCount"
+            style="@style/plain_text_lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diseaseCountSubtitle"
+            tools:text=" " />
+
+        <TextView
+            android:id="@+id/diseaseCountSub"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/diseaseCount"
+            app:layout_constraintStart_toEndOf="@+id/diseaseCount"
+            tools:text=" " />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/occurenceForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseForm">
+
+        <TextView
+            android:id="@+id/occurenceTitle"
+            style="@style/title_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="발생 정보"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/farmLocationSubtitle"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="농장 위치"
+            app:layout_constraintStart_toStartOf="@+id/occurenceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/occurenceTitle" />
+
+        <TextView
+            android:id="@+id/farmLocation"
+            style="@style/plain_text_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="충청북도 서산시 돼지찌개3길"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/farmLocationSubtitle" />
+
+        <TextView
+            android:id="@+id/occurenceCountSubtitle"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="발생 규모"
+            app:layout_constraintStart_toStartOf="@+id/occurenceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/farmLocation" />
+
+        <TextView
+            android:id="@+id/occurenceCount"
+            style="@style/plain_text_md"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="13마리"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/occurenceCountSubtitle" />
+
+        <TextView
+            android:id="@+id/occurenceDate"
+            style="@style/plain_text_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/occurenceCount"
+            app:layout_constraintStart_toEndOf="@id/occurenceCount"
+            tools:text="(2020년7월16일)" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sun.freshfarm">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_pig"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_pig_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".report.ReportSubmitAnotherActivity"></activity>
+        <activity android:name=".map.MapCaseActivity" />
+        <activity android:name=".report.DiagnosisForm" />
+        <activity android:name=".map.MapSearchActivity" />
+        <activity android:name=".home.search.ReportCaseSearch" />
+        <activity android:name=".home.search.ConfirmDiseaseSearch" />
+        <activity android:name=".home.news.NewsCardMainActivity" />
+        <activity android:name=".home.news.NewsPage" />
+        <activity android:name=".home.news.NewsFragment" />
+        <activity android:name=".report.ReportEditActivity" />
+        <activity android:name=".report.ReportActivity" />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".user.signup.CreateAccountActivity" />
+        <activity android:name=".confirmcase.CaseActivity" />
+        <activity android:name=".confirmcase.CaseDetailActivity" />
+        <activity android:name=".report.submit.ReportSubmitActivity" />
+        <activity android:name=".report.detail.ReportDetailActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".livestock.detail.LivestockDetailActivity" />
+        <activity android:name=".livestock.select.LivestockSelectActivity" />
+        <activity android:name=".user.signup.SignUpEmail" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".user.profile.edit.ProfileEditActivity" />
+        <activity android:name=".user.profile.ProfileActivity" />
+        <activity android:name=".user.signup.SignUpPassword" />
+        <activity android:name=".user.signup.EmailVerification" />
+        <activity android:name=".user.login.LoginActivity" />
+        <activity android:name=".disease.detail.DiseaseDetailActivity" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="teyhoqytpg" />
+
+        <activity android:name=".InitialActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyfirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/fresh_farm_logo" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryLight" />
+    </application>
+
+</manifest>

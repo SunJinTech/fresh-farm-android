@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    MAIN THEME COLORS-->
+    <color name="colorPrimary">#FF9A8F</color>
+    <color name="colorPrimaryDark">#FF6166</color>
+    <color name="colorPrimaryLight">#ffc0ba</color>
+
+    <color name="colorPrimaryTP">#80FF9A8F</color>
+
+    <color name="colorAccent">#FFE0AD</color>
+
+
+    <!--    GREY COLORS-->
+    <color name="grey">#A9A9A9</color>
+    <color name="greyDark">#696969</color>
+    <color name="greyLight">#DCDCDC</color>
+
+    <!--    WHITE-->
+    <color name="white">#ffffff</color>
+
+    <!--    BLACK-->
+
+
+    <color name="colorWarning">#FF756D</color>
+    <color name="colorWarningDark">#FF0000</color>
+    <color name="colorCaution">#ffcc00</color>
+    <color name="colorCautionDark">#cc6600</color>
+    <color name="colorNormal">#C0C0C0</color>
+    <color name="colorNormalDark">#696969</color>
+
+</resources>

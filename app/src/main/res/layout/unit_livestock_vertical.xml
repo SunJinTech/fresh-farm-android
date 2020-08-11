@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/livestockIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/background_round_unselected"
+        android:src="@drawable/cow_white"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/livestockKind"
+        style="@style/information_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="%KIND%"
+        app:layout_constraintStart_toEndOf="@+id/livestockIcon"
+        app:layout_constraintTop_toTopOf="@+id/livestockIcon" />
+
+    <TextView
+        android:id="@+id/livestockCount"
+        style="@style/title_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="0마리"
+        app:layout_constraintBottom_toBottomOf="@+id/livestockIcon"
+        app:layout_constraintStart_toEndOf="@+id/livestockIcon" />
+
+    <View
+        android:id="@+id/divider_a"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorNormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/livestockIcon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
