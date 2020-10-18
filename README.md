@@ -4,7 +4,7 @@
 Snapshot
 -------
 <div>
-![Picture1](https://user-images.githubusercontent.com/18053479/96366898-86833380-1185-11eb-9bd1-02be67d6a3e2.jpg)
+https://user-images.githubusercontent.com/18053479/96366898-86833380-1185-11eb-9bd1-02be67d6a3e2.jpg
 ![Picture2](https://user-images.githubusercontent.com/18053479/96366900-87b46080-1185-11eb-9703-d725652aca5e.png)
 ![Picture3](https://user-images.githubusercontent.com/18053479/96366902-884cf700-1185-11eb-897d-860629a3e2d1.png)
 </div>
